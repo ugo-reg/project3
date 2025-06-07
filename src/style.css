@@ -39,16 +39,16 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: background-position 0.8s ease;
-    max-width: 200px; /* Limit button width */
+    max-width: 200px; 
     min-width: 100px;
     box-shadow: border-box 0 4px 6px rgba(0, 0, 0, 0.1);
-    white-space: nowrap; /* Prevent text wrapping */
+    white-space: nowrap; 
 }
 
 
 button:hover {
     background-position: left bottom;
-    color: black; /* Optional: change text color on hover */
+    color: black; 
 }
 select{background-color:none !important;
     border: none;
@@ -203,7 +203,7 @@ gap:20px;
   }
  
   .school-image-container {
-    perspective: 1000px; /* Enables 3D effect */
+    perspective: 1000px; 
     width: 300px;
     height: 200px;
   }
@@ -256,10 +256,10 @@ gap:20px;
     transform: rotateY(0deg);
   }
 
-  /* Button Visibility Fix */
+ 
   .learn-more {
     opacity: 0;
-    pointer-events: none; /* Prevent accidental clicks */
+    pointer-events: none; 
     transition: opacity 0.3s ease-in-out;
     padding: 10px 15px;
     background-color: #ff5733;
@@ -270,13 +270,13 @@ gap:20px;
     position: absolute;
     bottom: 10px;
     
-    /* Counter-rotate the button */
+   
     transform: rotateY(180deg);
   }
 
   .school-image-container:hover .learn-more {
     opacity: 1;
-    pointer-events: auto; /* Enable clicks when visible */
+    pointer-events: auto; 
   }
 
   .reviews{background-image: url("https://images.unsplash.com/photo-1640310820557-248ea182a387?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyODI5MTd8MHwxfHNlYXJjaHwxMnx8Y2FuZHl8ZW58MHwwfHx8MTY2NDk4OTc3NQ&ixlib=rb-1.2.1&q=80&w=1080");
@@ -352,3 +352,59 @@ border-radius: 5px;
 }
 
 h3{text-align: center;}
+
+
+@media (max-width: 900px) {
+  .Courses {
+    grid-template-columns: 1fr; 
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .header-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+  .school-image-container,
+  .image-flip {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .course {
+    width: 90vw;
+    max-width: 400px;
+    height: auto;
+  }
+  .sponsor-logos1,
+  .sponsor-logos2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  body {
+    font-size: 16px;
+    padding: 5px;
+  }
+  .header-image {
+    max-width: 220px;
+  }
+  .course {
+    padding: 10px;
+  }
+}
