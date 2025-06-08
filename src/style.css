@@ -353,6 +353,45 @@ border-radius: 5px;
 
 h3{text-align: center;}
 
+.end{background-color: black;
+color: white;
+padding:10px;
+display:flex;
+gap:10px;}
+
+.end a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer {
+    background-color:black;
+padding:10px;
+    color: white;
+    font-size: 16px;
+  
+    margin-top: 20px;
+}
+.footer-text{
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+.material-symbols-outlined {
+  color:pink;
+  font-size: 80px !important;
+  transform:rotate(-20deg);
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+
 
 @media (max-width: 900px) {
   .Courses {
@@ -426,6 +465,15 @@ max-width: 400px;
   .reviewContainer{
     grid-template-columns: 1fr;
   }
+  .end{
+    flex-direction: column;
+    align-items: center;
+  }
+  footer{
+    text-align: center;
+    flex-direction: column;
+  }
+
 }
 
 
