@@ -443,6 +443,8 @@ h2{
     width: 100%;
     max-width: 350px;
     margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
   }
   .course {
     width: 90vw;
@@ -511,9 +513,7 @@ max-width: 350px;
     text-align: center;
     flex-direction: column;
   }
-  .school-images{flex-direction: column;
-  align-items: center;}
-
+  
 }
 
 
