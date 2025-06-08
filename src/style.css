@@ -479,16 +479,6 @@ max-width: 350px;
 
 }
 
-@media (max-width: 900px) {
-  .container,
-  .course,
-  .school-image-container,
-  .image-flip {
-    max-width: 100%;
-    width: 100%;
-  }
-}
-
 
 
 
