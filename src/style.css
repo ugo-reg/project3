@@ -445,10 +445,12 @@ max-width: 350px;
     flex-direction: column;
     align-items: center;
     gap: 0;
+    width:350px;
   }
   .masters-image-container {
     flex-direction: column;
     align-items: center;
+    width:350px;
   }
   .countdown-section {
     width: 90vw;
