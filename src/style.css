@@ -209,6 +209,9 @@ table{
   justify-content: center;
   gap: 10px;
   background-color: rgb(253, 242, 244);
+  padding:20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   }
 
 .trending{
@@ -508,6 +511,8 @@ max-width: 350px;
     text-align: center;
     flex-direction: column;
   }
+  .school-images{flex-direction: column;
+  align-items: center;}
 
 }
 
