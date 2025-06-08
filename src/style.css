@@ -441,7 +441,7 @@ h2{
   .school-image-container,
   .image-flip {
     width: 100%;
-    max-width: 350px;
+    
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
