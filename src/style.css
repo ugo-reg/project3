@@ -394,7 +394,7 @@ h2{text-align: center;}
 
 
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .Courses {
     grid-template-columns: 1fr; 
   }
@@ -477,8 +477,26 @@ max-width: 400px;
 
 }
 
+@media (max-width: 900px) {
+  .container,
+  .course,
+  .school-image-container,
+  .image-flip {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 
-@media (max-width: 400px) {
+
+
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* for smaller mobile phone screens*/
+@media (max-width: 300px) {
   body {
     font-size: 16px;
     padding: 5px;
@@ -490,4 +508,5 @@ max-width: 400px;
   .course {
     padding: 10px;
   }
+
 }
