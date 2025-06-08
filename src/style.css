@@ -395,6 +395,10 @@ h2{text-align: center;}
 
 
 @media (max-width: 900px) {
+  body{
+    overflow-x: hidden;
+    width:100%;
+  }
   .Courses {
     grid-template-columns: 1fr; 
   }
@@ -403,9 +407,7 @@ h2{text-align: center;}
     align-items: center;
     gap: 20px;
   }
-  body{
-    overflow-x: hidden;
-  }
+  
   .header-image {
     width: 100%;
     max-width: 350px;
