@@ -94,7 +94,7 @@ select{
   margin: 10px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  height:700px;
+  height:800px;
   width:350px;
 }
 
@@ -186,7 +186,7 @@ table{
 }
 
 .countdown-section {
-  width: 150px;
+  width: 200px;
   margin: auto;
   padding: 20px;
   border: 1px solid grey;
@@ -420,10 +420,7 @@ h2{
 
 
 @media (max-width: 900px) {
-  body{
-    overflow-x: hidden;
-    width:100%;
-  }
+ 
   .Courses {
     grid-template-columns: 1fr; 
   }
