@@ -437,7 +437,9 @@ h2{text-align: center;}
     flex-direction: column;
     align-items: center;
   width:90vw;
-max-width: 400px;
+max-width: 350px;
+  }
+  .section1{width:350px;
   }
   .masters-content {
     flex-direction: column;
@@ -490,10 +492,6 @@ max-width: 400px;
 
 
 
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-}
 
 /* for smaller mobile phone screens*/
 @media (max-width: 300px) {
