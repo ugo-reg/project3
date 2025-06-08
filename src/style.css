@@ -393,6 +393,29 @@ h3{text-align: center;}
     flex-direction: column;
     gap: 10px;
   }
+  .section-1{
+    flex-direction: column;
+    align-items: center;
+  width:90vw;
+max-width: 400px;
+  }
+  .masters-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .masters-image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .countdown-section {
+    width: 90vw;
+    max-width: 300px;
+  }
+  .trending {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 
