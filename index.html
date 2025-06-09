@@ -136,12 +136,14 @@
     <div class="section0">
         <div class="trending">
         <h2>Special Orders</h2>
-        <button class="trending-button" id="toggleTrending">View All</button>
+        <button class="trending-button" onclick="showFront()">View All</button>
+        <button class="trending-button" onclick="showRear()">Flip</button>
         
 </div>
     <hr>
     <div class="Courses">
-        <div class="course">
+      <div class="course-flip">
+        <div class="course front">
         <img src="https://images.unsplash.com/photo-1603202902092-3eb7a76ecf5f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGNhbmR5fGVufDB8fDB8fHww" alt="course image 1" class="course-image" width="300" height="300">
         <div class="course-details">
             <h3>Candy Bean</h3>
@@ -149,7 +151,18 @@
             <button class="course-button">Get Now🤤</button>
     </div>
     </div>
-    <div class="course">
+
+    <div class="course rear">
+    <img src="https://images.pexels.com/photos/5847093/pexels-photo-5847093.jpeg?auto=compress&cs=tinysrgb&w=600" width="300" height="300" alt="course image " class="course-image">
+  <div class="course-details">
+            <h3>Chocolate Chips</h3>
+            <p>Each little chip is like a hidden treasure, bursting with sweet, chocolatey joy. Whether you sprinkle them, bake them, or sneak a handful, chocolate chips make every bite a happy adventure! 🚀🍪💕</p>
+            <button class="course-button">Get Now🤤</button>
+        </div>  
+        </div>
+  </div>
+<div class="course-flip">
+    <div class="course front">
         <img src="https://images.unsplash.com/photo-1534119428213-bd2626145164?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGNhbmR5fGVufDB8fDB8fHww" alt="course image 2" class="course-image" width="300" height="300">
         <div class="course-details">
             <h3>Marshmallows</h3>
@@ -158,6 +171,17 @@
             <button class="course-button">Get Now🤤</button>
         </div>
         </div>
+        <div class="course rear">
+            <img src="https://images.pexels.com/photos/6167345/pexels-photo-6167345.jpeg?auto=compress&cs=tinysrgb&w=600" alt="course image 2" class="course-image" width="300" height="300">
+            <div class="course-details">
+                <h3>Chocolate Bars</h3>
+                <p>Chocolate bars are the ultimate treat—rich, creamy, and oh-so-satisfying! 🍫✨ Whether you prefer dark, milk, or white chocolate, each bite is a moment of pure bliss. Perfect for sharing (or not!), they’re the sweet escape we all crave! 😍🍬</p>
+                <button class="course-button">Get Now🤤</button>
+            </div>
+        </div>
+        </div>
+
+
         <div class="course">
             <img src="https://plus.unsplash.com/premium_photo-1673438009547-1bdfa340193b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fGNhbmR5fGVufDB8fDB8fHww" alt="course image 3" class="course-image"  height="300" width="300">
             <div class="course-details">
@@ -338,7 +362,7 @@
     mood
     </span>
   <p class="footer-text">© 2025 Sweet Cafe. All rights reserved.</p>
-  <p class="footer-text">Made with ❤️ by Ugochi, and hosted on <a href="https://ug-candy-store.netlify.app/">Netlify</a> </p>
+  <p class="footer-text">Made with ❤️ by Ugochi, and hosted on <a href="https://ug-candy-store.netlify.app/" target="_blank">Netlify</a> </p>
 
 </section>
 </div>
@@ -346,16 +370,7 @@
 
 </div>
     
-       
-        <script>
-          document.getElementById('toggleTrending').addEventListener('click', function() {
-              if (this.textContent.trim() === 'View All') {
-                  this.textContent = 'Enroll Now';
-              } else {
-                  this.textContent = 'View All';
-              }
-          });
-          </script>
+
           <script>
           function startCountdown(duration, elementId, showMilliseconds = false) {
             const endTime = Date.now() + duration * 1000;
@@ -389,6 +404,21 @@
         startCountdown(7200, "countdown", true);         // HH:MM:SS
         startCountdown(3600, "countdown1", true);  // HH:MM:SS:MS
         startCountdown(1800, "countdown2");         // HH:MM:SS
+</script>
+<script>
+  function showFront() {
+  document.querySelectorAll('.course-flip').forEach(flip => {
+    flip.querySelector('.front').style.display = "block";
+    flip.querySelector('.rear').style.display = "none";
+  });
+}
+
+function showRear() {
+  document.querySelectorAll('.course-flip').forEach(flip => {
+    flip.querySelector('.front').style.display = "none";
+    flip.querySelector('.rear').style.display = "block";
+  });
+}
 </script>
         </body>
 </html>

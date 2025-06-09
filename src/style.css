@@ -1,4 +1,4 @@
-/* Always include this at the top of your CSS */
+
 html, body {
   width: 100%;
   overflow-x: hidden;
@@ -454,6 +454,35 @@ input{
   cursor: pointer;
 }
 
+
+
+
+.course-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.course-flip {
+  position: relative;
+  
+}
+
+.course.front,
+.course.rear {
+  position: absolute;
+  top: 0; left: 0;
+ 
+  transition: opacity 0.4s;
+}
+
+.course.front {
+  z-index: 2;
+}
+
+.course.rear {
+  z-index: 3;
+  display: none;
+}
 
 
 
