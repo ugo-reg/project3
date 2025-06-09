@@ -15,6 +15,20 @@ body{
  font-style: normal;
 }
 
+select{
+  font-family:  "Mystery Quest", system-ui;
+  background-color:#FCDDDD !important;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+select:hover{
+  transform: scale(1.1);
+  color: black;
+  font-weight: 600;
+}
+
+
 .header{
  display:flex;
  position: relative;
@@ -357,6 +371,7 @@ table{
 .reviewContainer{
   display:grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap:30px;
 }
 
 .review-container{
@@ -381,7 +396,7 @@ h3{
   color: white;
   padding:10px;
   display:flex;
-  gap:10px;}
+  gap:40px;}
 
 .end a{
   color: white;
@@ -402,7 +417,13 @@ footer {
   font-size: 14px;
   color: #ccc;
 }
-
+.footer-section4 ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  
+}
 
 .material-symbols-outlined {
   color:pink;
