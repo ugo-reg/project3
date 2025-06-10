@@ -490,6 +490,7 @@ input{
 @media (max-width: 900px) {
  
   .Courses {
+    grid-template-columns: 1fr;
     display:flex;
     flex-direction: column;
     align-items: center;
