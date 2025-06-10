@@ -2,6 +2,7 @@
 html, body {
   width: 100%;
   overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body{
@@ -489,7 +490,6 @@ input{
 @media (max-width: 900px) {
  
   .Courses {
-    grid-template-columns: 1fr; 
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -498,9 +498,9 @@ input{
     padding: 0;
   }
   .course-flip{
-    width: 100%;
-    max-width: 350px;
-    min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   }
   .header {
     flex-direction: column;
@@ -643,6 +643,7 @@ width:350px;}
     max-width: 100vw !important;
     width: 100% !important;
     box-sizing: border-box;
+
   }
   img, video, iframe {
     max-width: 100%;
@@ -650,3 +651,5 @@ width:350px;}
     display: block;
   }
 }
+
+
