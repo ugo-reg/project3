@@ -490,7 +490,6 @@ input{
 @media (max-width: 900px) {
  
   .Courses {
-    grid-template-columns: 1fr;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -500,8 +499,9 @@ input{
   }
   .course-flip{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  position:static;
+  width: 100%;
+  max-width: 350px;
   }
   .header {
     flex-direction: column;
@@ -527,6 +527,7 @@ input{
     min-width: 0;
     margin:0 auto;
     box-sizing: border-box;
+    position:static;
   }
   .course-image{
     width:100%;
