@@ -490,6 +490,17 @@ input{
  
   .Courses {
     grid-template-columns: 1fr; 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    width:100%;
+    padding: 0;
+  }
+  .course-flip{
+    width: 100%;
+    max-width: 350px;
+    min-width: 0;
   }
   .header {
     flex-direction: column;
@@ -510,8 +521,16 @@ input{
   }
   .course {
     width: 90vw;
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
+    min-width: 0;
+    margin:0 auto;
+    box-sizing: border-box;
+  }
+  .course-image{
+    width:100%;
+    height: auto;
+    max-width: 100%;
   }
   .sponsor-logos1,
   .sponsor-logos2 {
