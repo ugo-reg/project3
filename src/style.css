@@ -456,8 +456,6 @@ input{
 }
 
 
-
-
 .course-image {
   width: 100%;
   border-radius: 10px;
@@ -490,18 +488,18 @@ input{
 @media (max-width: 900px) {
  
   .Courses {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap:20px;
-    width:100%;
-    padding: 0;
+    display:flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap:20px !important;
+    width:100% !important;
+    padding: 0 !important;
   }
   .course-flip{
-  display: flex;
-  position:static;
-  width: 100%;
-  max-width: 350px;
+  display: flex !important;
+  position:static !important;
+  width: 100% !important;
+  max-width: 350px !important;
   }
   .header {
     flex-direction: column;
@@ -521,13 +519,13 @@ input{
     margin: 0 auto;
   }
   .course {
-    width: 90vw;
-    max-width: 350px;
-    height: auto;
-    min-width: 0;
-    margin:0 auto;
-    box-sizing: border-box;
-    position:static;
+    width: 90vw !important;
+    max-width: 350px !important;
+    height: auto !important;
+    min-width: 0 !important;
+    margin:0 auto !important;
+    box-sizing: border-box !important;
+    position:static !important;
   }
   .course-image{
     width:100%;
